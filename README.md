@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Order Management Service
 
 ## Overview
@@ -137,3 +138,6 @@ npm test
 - [ ] Improve error handling
 - [ ] Add authentication/authorization
 - [ ] Set up CI/CD pipeline
+=======
+# Order-management
+>>>>>>> d120651ebb73b9e3f6175a50ff6bd92bcd03d74c
