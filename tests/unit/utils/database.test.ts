@@ -11,7 +11,6 @@
  *   Unit tests should never connect to a real MongoDB instance.
  *   Use integration tests for that purpose.
  */
-
 import mongoose, { mongo } from "mongoose";
 import { Database } from "../../../src/utils/database";
 import { logger } from "../../../src/utils/logger";
