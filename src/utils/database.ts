@@ -57,6 +57,7 @@ export class Database {
 
     } catch (error) {
       logger.error('Failed to connect to MongoDB:', error);
+      this.isConnected = false;
       throw error;
     }
   }
@@ -84,5 +85,12 @@ export class Database {
    */
   getIsConnected(): boolean {
     return this.isConnected;
+  }
+
+  /**
+   * Reset singleton instance (⚠️ test-only, do not use in production)
+   */
+  public static resetInstance(): void {
+    Database.instance = undefined as any;
   }
 }

@@ -1,17 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="6" failures="0" errors="0" time="1.08">
-  <testsuite name="Logger Utility" errors="0" failures="0" skipped="0" timestamp="2025-09-25T23:12:49" time="0.929" tests="6">
-    <testcase classname="Logger Utility Logs info message" name="Logger Utility Logs info message" time="0.004">
+<testsuites name="jest tests" tests="9" failures="0" errors="0" time="1.081">
+  <testsuite name="Database Utility (Unit Tests)" errors="0" failures="0" skipped="0" timestamp="2025-09-26T01:39:21" time="0.914" tests="9">
+    <testcase classname="Database Utility (Unit Tests) should be a singleton" name="Database Utility (Unit Tests) should be a singleton" time="0.001">
     </testcase>
-    <testcase classname="Logger Utility Logs error message" name="Logger Utility Logs error message" time="0.001">
+    <testcase classname="Database Utility (Unit Tests) uses MONGODB_URI when provided" name="Database Utility (Unit Tests) uses MONGODB_URI when provided" time="0.001">
     </testcase>
-    <testcase classname="Logger Utility Logs error with stack trace" name="Logger Utility Logs error with stack trace" time="0.006">
+    <testcase classname="Database Utility (Unit Tests) should not reconnect if already connected" name="Database Utility (Unit Tests) should not reconnect if already connected" time="0">
     </testcase>
-    <testcase classname="Logger Utility Include timestamp and default metadata" name="Logger Utility Include timestamp and default metadata" time="0.002">
+    <testcase classname="Database Utility (Unit Tests) should handle connection failure" name="Database Utility (Unit Tests) should handle connection failure" time="0.004">
     </testcase>
-    <testcase classname="Logger Utility Adds console transport in non-production" name="Logger Utility Adds console transport in non-production" time="0.008">
+    <testcase classname="Database Utility (Unit Tests) should disconnect from the database" name="Database Utility (Unit Tests) should disconnect from the database" time="0.001">
     </testcase>
-    <testcase classname="Logger Utility Does not add console transport in production" name="Logger Utility Does not add console transport in production" time="0.007">
+    <testcase classname="Database Utility (Unit Tests) should ignore disconnect when already disconnected" name="Database Utility (Unit Tests) should ignore disconnect when already disconnected" time="0">
+    </testcase>
+    <testcase classname="Database Utility (Unit Tests) should handle MongoDB error event" name="Database Utility (Unit Tests) should handle MongoDB error event" time="0">
+    </testcase>
+    <testcase classname="Database Utility (Unit Tests) should handle MongoDB disconnected event" name="Database Utility (Unit Tests) should handle MongoDB disconnected event" time="0.001">
+    </testcase>
+    <testcase classname="Database Utility (Unit Tests) should handle SIGINT for graceful shutdown" name="Database Utility (Unit Tests) should handle SIGINT for graceful shutdown" time="0">
     </testcase>
   </testsuite>
 </testsuites>
