@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="9" failures="0" errors="0" time="1.081">
-  <testsuite name="Database Utility (Unit Tests)" errors="0" failures="0" skipped="0" timestamp="2025-09-26T01:39:21" time="0.914" tests="9">
+<testsuites name="jest tests" tests="9" failures="0" errors="0" time="1.187">
+  <testsuite name="Database Utility (Unit Tests)" errors="0" failures="0" skipped="0" timestamp="2025-09-26T01:47:18" time="1.033" tests="9">
     <testcase classname="Database Utility (Unit Tests) should be a singleton" name="Database Utility (Unit Tests) should be a singleton" time="0.001">
     </testcase>
     <testcase classname="Database Utility (Unit Tests) uses MONGODB_URI when provided" name="Database Utility (Unit Tests) uses MONGODB_URI when provided" time="0.001">
@@ -9,15 +9,15 @@
     </testcase>
     <testcase classname="Database Utility (Unit Tests) should handle connection failure" name="Database Utility (Unit Tests) should handle connection failure" time="0.004">
     </testcase>
-    <testcase classname="Database Utility (Unit Tests) should disconnect from the database" name="Database Utility (Unit Tests) should disconnect from the database" time="0.001">
+    <testcase classname="Database Utility (Unit Tests) should disconnect from the database" name="Database Utility (Unit Tests) should disconnect from the database" time="0">
     </testcase>
-    <testcase classname="Database Utility (Unit Tests) should ignore disconnect when already disconnected" name="Database Utility (Unit Tests) should ignore disconnect when already disconnected" time="0">
+    <testcase classname="Database Utility (Unit Tests) should ignore disconnect when already disconnected" name="Database Utility (Unit Tests) should ignore disconnect when already disconnected" time="0.001">
     </testcase>
     <testcase classname="Database Utility (Unit Tests) should handle MongoDB error event" name="Database Utility (Unit Tests) should handle MongoDB error event" time="0">
     </testcase>
-    <testcase classname="Database Utility (Unit Tests) should handle MongoDB disconnected event" name="Database Utility (Unit Tests) should handle MongoDB disconnected event" time="0.001">
+    <testcase classname="Database Utility (Unit Tests) should handle MongoDB disconnected event" name="Database Utility (Unit Tests) should handle MongoDB disconnected event" time="0">
     </testcase>
-    <testcase classname="Database Utility (Unit Tests) should handle SIGINT for graceful shutdown" name="Database Utility (Unit Tests) should handle SIGINT for graceful shutdown" time="0">
+    <testcase classname="Database Utility (Unit Tests) should handle SIGINT for graceful shutdown" name="Database Utility (Unit Tests) should handle SIGINT for graceful shutdown" time="0.001">
     </testcase>
   </testsuite>
 </testsuites>
