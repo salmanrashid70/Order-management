@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-
 # Order Management Service
 
 ## Overview
@@ -68,6 +66,7 @@ POST /api/orders
 | Component   | Total | Passed | Failed | Coverage |
 | ----------- | ----- | ------ | ------ | -------- |
 | Logger      | 6     | 6      | 0      | 100%     |
+| OrderModel  | 7     | 7      | 0      | 100%     |
 | Database    | 9     | 9      | 0      | 94.59%   |
 | Controllers | -     | -      | -      | 0%       |
 | Services    | -     | -      | -      | 0%       |
@@ -125,10 +124,10 @@ npm test
 
 | Metric     | Target | Current | Status |
 | ---------- | ------ | ------- | ------ |
-| Statements | 80%    | 1.1%    | ❌     |
-| Branches   | 80%    | 1.63%   | ❌     |
-| Functions  | 80%    | 0%      | ❌     |
-| Lines      | 80%    | 1.12%   | ❌     |
+| Statements | 80%    | 25.54%  | ❌     |
+| Branches   | 80%    | 14.75%  | ❌     |
+| Functions  | 80%    | 26.56%  | ❌     |
+| Lines      | 80%    | 25.69%  | ❌     |
 
 ## TODO
 
@@ -139,7 +138,3 @@ npm test
 - [ ] Improve error handling
 - [ ] Add authentication/authorization
 - [ ] # Set up CI/CD pipeline
-
-# Order-management
-
-> > > > > > > d120651ebb73b9e3f6175a50ff6bd92bcd03d74c

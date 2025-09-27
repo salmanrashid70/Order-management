@@ -79,7 +79,7 @@ describe('Database Utility (Unit Tests)', () => {
     // ---------------------------
     // Singleton tests
     // ---------------------------
-    test('should be a singleton', () => {
+    it('should be a singleton', () => {
         // Getting a new instance should return the same object
         const anotherDb = Database.getInstance();
         expect(db).toBe(anotherDb);
@@ -88,7 +88,7 @@ describe('Database Utility (Unit Tests)', () => {
     // ---------------------------
     // Connection tests
     // ---------------------------
-    test('uses MONGODB_URI when provided', async () => {
+    it('uses MONGODB_URI when provided', async () => {
         // Save old env var and set a temporary one
         const uri = 'mongodb://localhost:27017/testdb';
         const old = process.env.MONGODB_URI;
@@ -105,7 +105,7 @@ describe('Database Utility (Unit Tests)', () => {
         process.env.MONGODB_URI = old;
     });
 
-    test('should not reconnect if already connected', async () => { 
+    it('should not reconnect if already connected', async () => { 
         // First connect succeeds
         (mongoose.connect as jest.Mock).mockResolvedValueOnce(undefined);
 
@@ -119,7 +119,7 @@ describe('Database Utility (Unit Tests)', () => {
         expect(logger.info).toHaveBeenCalledWith('Database already connected');
     });
 
-    test('should handle connection failure', async () => {
+    it('should handle connection failure', async () => {
         const error = new Error('Connection failed');
         // Simulate mongoose.connect() throwing an error
         (mongoose.connect as jest.Mock).mockRejectedValueOnce(error);
@@ -135,7 +135,7 @@ describe('Database Utility (Unit Tests)', () => {
     // ---------------------------
     // Disconnection tests
     // ---------------------------
-    test('should disconnect from the database', async () => {
+    it('should disconnect from the database', async () => {
         // First simulate a successful connection
         (mongoose.connect as jest.Mock).mockResolvedValueOnce(undefined);
         // Then simulate a successful disconnect
@@ -152,7 +152,7 @@ describe('Database Utility (Unit Tests)', () => {
         expect(db.getIsConnected()).toBe(false);
     });
 
-    test('should ignore disconnect when already disconnected', async () => {
+    it('should ignore disconnect when already disconnected', async () => {
         // Calling disconnect without being connected should do nothing
         await db.disconnect();
 
@@ -163,7 +163,7 @@ describe('Database Utility (Unit Tests)', () => {
     // ---------------------------
     // Event handling tests
     // ---------------------------
-    test('should handle MongoDB error event', async () => { 
+    it('should handle MongoDB error event', async () => { 
         await db.connect();
 
         // Simulate mongoose connection emitting an error
@@ -177,7 +177,7 @@ describe('Database Utility (Unit Tests)', () => {
         expect(db.getIsConnected()).toBe(false);
     });
 
-    test('should handle MongoDB disconnected event', async () => {
+    it('should handle MongoDB disconnected event', async () => {
         await db.connect();
 
         // Simulate mongoose connection being disconnected
@@ -191,7 +191,7 @@ describe('Database Utility (Unit Tests)', () => {
     // ---------------------------
     // Signal handling test
     // ---------------------------
-    test('should handle SIGINT for graceful shutdown', async () => {
+    it('should handle SIGINT for graceful shutdown', async () => {
         // Simulate successful connection
         (mongoose.connect as jest.Mock).mockResolvedValueOnce(undefined);
 

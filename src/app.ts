@@ -17,7 +17,6 @@ export class App {
     this.orderRoutes = new OrderRoutes();
     this.initializeMiddleware();
     this.initializeRoutes();
-    // this.initializeEventHandlers();
     this.initializeErrorHandling();
   }
 
@@ -68,21 +67,6 @@ export class App {
       });
     });
   }
-
-  /**
-   * Initialize event handlers for domain events
-   */
-//   private initializeEventHandlers(): void {
-//     const eventBus = EventBus.getInstance();
-
-//     // Register order event handlers
-//     eventBus.subscribe('OrderCreated', new OrderCreatedHandler());
-//     eventBus.subscribe('OrderStatusUpdated', new OrderStatusUpdatedHandler());
-//     eventBus.subscribe('PaymentProcessed', new PaymentProcessedHandler());
-//     eventBus.subscribe('OrderCancelled', new OrderCancelledHandler());
-
-//     console.log('Event handlers initialized successfully');
-//   }
 
   /**
    * Initialize error handling middleware

@@ -49,9 +49,6 @@ module.exports = {
   // Clear mocks between tests
   clearMocks: true,
   
-  // Display test results with colors
-  colors: true,
-
   // Reporter configuration
   reporters: ['default', 'jest-junit'],
 
