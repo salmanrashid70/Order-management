@@ -15,7 +15,7 @@ import {
   CustomError
 } from '../utils/errors';
 import { logger } from '../utils/logger';
-import { PaymentService } from '../types/payment.service';
+import { PaymentService } from './payment.service';
 
 /**
  * Order service handling business logic for order operations

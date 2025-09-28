@@ -1,19 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="7" failures="0" errors="0" time="2.366">
-  <testsuite name="OrderModel - Schema Validation" errors="0" failures="0" skipped="0" timestamp="2025-09-27T07:34:28" time="2.208" tests="7">
-    <testcase classname="OrderModel - Schema Validation Schema Defaults should apply default values correctly" name="OrderModel - Schema Validation Schema Defaults should apply default values correctly" time="0.079">
+<testsuites name="jest tests" tests="11" failures="0" errors="0" time="1.503">
+  <testsuite name="OrderService - Unit Tests" errors="0" failures="0" skipped="0" timestamp="2025-09-28T07:26:23" time="1.35" tests="11">
+    <testcase classname="OrderService - Unit Tests createOrder should create order successfully with valid data" name="OrderService - Unit Tests createOrder should create order successfully with valid data" time="0.002">
     </testcase>
-    <testcase classname="OrderModel - Schema Validation Schema Defaults should auto-generate order number" name="OrderModel - Schema Validation Schema Defaults should auto-generate order number" time="0.04">
+    <testcase classname="OrderService - Unit Tests createOrder should throw DatabaseError on save failure" name="OrderService - Unit Tests createOrder should throw DatabaseError on save failure" time="0.009">
     </testcase>
-    <testcase classname="OrderModel - Schema Validation Schema Validation should require essential fields" name="OrderModel - Schema Validation Schema Validation should require essential fields" time="0.005">
+    <testcase classname="OrderService - Unit Tests getOrderById should return order details for a valid order ID" name="OrderService - Unit Tests getOrderById should return order details for a valid order ID" time="0.001">
     </testcase>
-    <testcase classname="OrderModel - Schema Validation Schema Validation should validate item quantity is positive" name="OrderModel - Schema Validation Schema Validation should validate item quantity is positive" time="0.005">
+    <testcase classname="OrderService - Unit Tests getOrderById should throw NotFoundError if order does not exist" name="OrderService - Unit Tests getOrderById should throw NotFoundError if order does not exist" time="0">
     </testcase>
-    <testcase classname="OrderModel - Schema Validation Schema Validation should validate prices are non-negative" name="OrderModel - Schema Validation Schema Validation should validate prices are non-negative" time="0.003">
+    <testcase classname="OrderService - Unit Tests getOrderById should throw DatabaseError on DB failure" name="OrderService - Unit Tests getOrderById should throw DatabaseError on DB failure" time="0">
     </testcase>
-    <testcase classname="OrderModel - Schema Validation Schema Validation should validate enum values" name="OrderModel - Schema Validation Schema Validation should validate enum values" time="0.002">
+    <testcase classname="OrderService - Unit Tests getOrdersByUserId should return paginated orders for a valid user" name="OrderService - Unit Tests getOrdersByUserId should return paginated orders for a valid user" time="0">
     </testcase>
-    <testcase classname="OrderModel - Schema Validation toJSON Transformation should transform document correctly" name="OrderModel - Schema Validation toJSON Transformation should transform document correctly" time="0.004">
+    <testcase classname="OrderService - Unit Tests getOrdersByUserId should return empty array when user has no orders" name="OrderService - Unit Tests getOrdersByUserId should return empty array when user has no orders" time="0">
+    </testcase>
+    <testcase classname="OrderService - Unit Tests getOrdersByUserId should handle pagination correctly for multiple pages" name="OrderService - Unit Tests getOrdersByUserId should handle pagination correctly for multiple pages" time="0.001">
+    </testcase>
+    <testcase classname="OrderService - Unit Tests getOrdersByUserId should use default pagination values when not provided" name="OrderService - Unit Tests getOrdersByUserId should use default pagination values when not provided" time="0">
+    </testcase>
+    <testcase classname="OrderService - Unit Tests getOrdersByUserId should throw DatabaseError on database failure" name="OrderService - Unit Tests getOrdersByUserId should throw DatabaseError on database failure" time="0">
+    </testcase>
+    <testcase classname="OrderService - Unit Tests getOrdersByUserId should handle edge case with zero limit" name="OrderService - Unit Tests getOrdersByUserId should handle edge case with zero limit" time="0.001">
     </testcase>
   </testsuite>
 </testsuites>
