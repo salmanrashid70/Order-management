@@ -19,7 +19,6 @@ import { PaymentService } from './payment.service';
 
 /**
  * Order service handling business logic for order operations
- * Uses event bus to publish domain events for loose coupling
  */
 export class OrderService {
   private paymentService: PaymentService;

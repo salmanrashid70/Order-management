@@ -14,8 +14,8 @@ import { OrderService } from '../serviecs/order.service';
 export class OrderController {
   private orderService: OrderService;
 
-  constructor() {
-    this.orderService = new OrderService();
+  constructor(orderService?: OrderService) {
+    this.orderService = orderService ?? new OrderService();
   }
 
   /**
